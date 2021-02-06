@@ -1,0 +1,154 @@
+* {
+    padding : 0;
+    margin : 0;
+    
+    transition: all 0.5s ease-in;
+}
+
+$btn-color: rgb(232, 63, 238);
+
+%buttton {
+    background: white;
+    border: 1px solid $btn-color;
+    padding: 1rem;
+    margin: 1rem 1rem;
+    width: 150px;
+    color: $btn-color;
+    font-weight: 500;
+}
+
+body {
+    background : white;
+    color : black;
+    justify-content: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    padding: 1REM;
+    overflow: hidden;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    
+    .cart:hover {
+        transform: scale(1.05);
+    }
+}
+.logo-container {
+    display: flex;
+    h4 {
+        margin: auto;
+    }
+}
+nav {
+    flex: 0.5;
+    width: max-content;
+    margin: auto;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+.nav-link {
+    padding: 0.2rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.nav-link:hover {
+    color: $btn-color;
+}
+
+.presentation {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.introduction {
+    h1 {
+        padding: 0.5rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}
+
+.cta {
+    margin: 1rem 2rem 0;
+    button {
+        @extend %buttton;
+    }
+    button:hover {
+        background: $btn-color;
+        color: white;
+    } 
+}
+
+.laptop-img {
+    width: 300px;
+    filter: drop-shadow(0 5px 5px black);
+    
+}
+
+.laptop-select {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.select-icon:hover {
+    transition: none;
+        transform: scale(1.2);
+    }
+
+.big-circle, .medium-circle, .small-circle {
+    position: absolute;
+    z-index: -1;
+}
+
+.big-circle {
+    width: 100%;
+    right: 0;
+    top: 0;
+}
+.medium-circle {
+    left: -150px;
+    bottom: 0;
+}
+.small-circle {
+    bottom: -50px;
+    right: -50px;
+}
+
+@media screen and (min-width:720px) {
+    .presentation {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .laptop-img {
+        width: 400px;
+    }
+
+    .introduction {
+        h1 {font-size: 3rem;}
+    }
+    .big-circle {
+        width: 500px;
+        top: 0px;
+    }
+
+    .medium-circle {
+        right: 600px;
+        bottom: 50px;
+    }
+    .small-circle {
+        bottom: 230px;
+        right: 300px;
+        
+    }
+
+}
