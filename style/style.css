@@ -177,10 +177,10 @@ ul {
   }
   .medium-circle {
     right: 600px;
-    bottom: 50px;
+    bottom: 20%;
   }
   .small-circle {
-    top: 50px;
+    bottom: 0;
     right: 300px;
   }
 }
