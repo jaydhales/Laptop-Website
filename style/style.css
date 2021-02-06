@@ -25,7 +25,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100vh;
   padding: 1REM;
-  overflow: hidden;
 }
 
 header {
@@ -139,7 +138,6 @@ ul {
 }
 
 .big-circle {
-  width: 100%;
   right: 0;
   top: 0;
 }
@@ -150,8 +148,8 @@ ul {
 }
 
 .small-circle {
-  bottom: -50px;
-  right: -50px;
+  bottom: 0px;
+  right: 0px;
 }
 
 @media screen and (min-width: 720px) {
