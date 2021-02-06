@@ -139,7 +139,7 @@ ul {
 
 .big-circle {
   right: 0;
-  top: 0;
+  bottom: 150px;
 }
 
 .medium-circle {
@@ -148,8 +148,8 @@ ul {
 }
 
 .small-circle {
-  bottom: 0px;
-  right: 0px;
+  bottom: 0;
+  right: 0;
 }
 
 @media screen and (min-width: 720px) {
